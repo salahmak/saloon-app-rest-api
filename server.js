@@ -20,6 +20,10 @@ app.get("/api", (req, res) => {
   res.send("Welcome to the api");
 });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the app");
+});
+
 app.use("/api/auth", auth);
 app.use("/api/users", users);
 app.use("/api/saloons", saloons);
